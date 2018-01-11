@@ -1,7 +1,7 @@
 # Quiz-CS
 This Quiz has been made purely with HTML,CSS and Javascript.
 # Description
-•	It consists of 10 questions and all the questions from GATE. <br/>
+•	It consists of 10 questions of Computer Science and Engineering and all the questions from GATE. <br/>
 • Each question carry 4 marks. <br/>
 • Marks are awarded for correct answers. <br/>
 • No marks are awarded for wrong answers and unattempted questions. <br/>
