@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link rel="icon" type="image/png" href="loginicon.png"/>
+<script src="quiz_cs.js"></script>
+<style>
+#scan
+{
+	width:200px;
+	top:20%;
+	left:20%;
+	position:relative;
+}
+#outer
+{
+	width:400px; height:300px;
+	position:fixed;
+	margin:0;
+	top:25%;
+	left:30%;
+	background-image:url(login2.jpg);
+	background-size:100%;
+}
+input
+{
+	width:230px;
+	height:25px;
+}
+span{ color:#F00}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image:url(login2.jpg); background-size:100%;">
+<div id="outer">
+<form action="quiz_cs.html" onsubmit="return submitForm()">
+<div style="text-align:center; font-size:24px; color:#069;">
+<br />
+<b>USER Login</b>
+<i class="fa fa-lock"></i>
+</div>
+<div id="scan"><br />
+
+<input type="text" placeholder="Name" onkeyup="namecheck()"/><br /><br />
+
+<input type="text" placeholder="Roll Number"/><br /><br />
+
+<input type="password" placeholder="Password"/><br />
+<span></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="submit" style="width:100px; height:30px; background-color:#069; color:#FFF">Login</button>
+</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quiz Time</title>
+<link rel="icon" type="image/jpg" href="quiz_icon.jpg" />
+<script src="quiz_cs.js"></script>
+<style>
+.top
+{
+	width:100%;
+	height:50px;
+	padding:5px;
+	background-color:#003;
+	border:ridge;
+	font-size:36px;
+	font-family:"Times New Roman", Times, serif;
+	color:#FFF;
+	font-style:oblique;
+}
+#time
+{
+	width:900px;
+	height:auto;
+	text-align:right;
+	padding:0;
+	margin:0;
+	font-size:36px;
+}
+#quiz
+{
+	width:900px;
+	height:auto;
+}
+.bt,#submit{ visibility:hidden;}
+span
+{
+	color:#0F0;
+}
+button
+{
+	height:30px;
+}
+</style>
+</head>
+
+<body style=" color:#FFF; background-image:url(quiz.jpg); font-size:18px" >
+<div class="top">
+<marquee><b>COMPUTER SCIENCE AND ENGINEERING</b></marquee>
+</div>
+<div ><br />
+<button id="start" onclick="timer()">Start Quiz</button>
+<p id="time">Timer</p>
+<br />
+</div>
+<div id="quiz">
+</div>
+<div style="width:50%; text-align:right">
+<button type="submit" id="submit" onclick="check()">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+<button id="show" class="bt" onclick="showAnswers()">Show Answers</button>
+<button id="result" class="bt" onclick="results()">Result</button>
+</div>
+</body>
+</html>
